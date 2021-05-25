@@ -1,0 +1,12 @@
+:root{
+    font-family: 'Nunito', sans-serif;
+    --primary-color:hsl(198, 63%, 38%);
+    --secondary-color: hsl(233, 12%, 13%);
+    --text-color:hsl(0, 0%, 100%);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
