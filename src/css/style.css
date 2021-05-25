@@ -3,10 +3,307 @@
     --primary-color:hsl(198, 63%, 38%);
     --secondary-color: hsl(233, 12%, 13%);
     --text-color:hsl(0, 0%, 100%);
+    --text-gray: gray;
+    font-size: 16px;
+    color: var(--secondary-color);
 }
 
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+
+main{
+    width: 100%;
+    background-color: var(--text-color)
+}
+
+a,a:hover,a:active,a:focus{
+    text-decoration: none;
+    color:hsl(233, 12%, 13%);
+}
+
+header{
+    max-width: 1000px;
+    margin: .5rem auto;
+    background-color: var(--primary-color);
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+header .header__img{
+    height: auto;
+    padding: 1em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header .header__img img{
+    width: 15em;
+    height: 16em;
+}
+
+header .header__text{
+    color: var(--text-color);
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.container{
+    margin: 0 auto;
+    max-width: 1000px;
+}
+
+.container .datos-generales{
+    margin-bottom: 1em;
+}
+
+.container .datos-generales h2{
+    background-color: var(--secondary-color);
+    color: var(--text-color);
+    padding: .5em;
+}
+
+.container .datos-generales .content{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-auto-rows: 5em;
+}
+
+.container .datos-generales .content div{
+    display: flex;
+    align-items: center;
+    padding-left: 3em;
+}
+
+.container .datos-generales .content div img{
+    width: 3em;
+    height: 2em;
+    margin-right: 1em;
+}
+
+
+
+/* IDOMAS */
+.container .idiomas h2{
+    background-color: var(--secondary-color);
+    color: var(--text-color);
+    padding: .5em;
+}
+
+.container .idiomas .content{
+    padding: 2em 0;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.container .idiomas .content div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container .idiomas .content img{
+    width: 5em;
+    height: 5em;
+    margin-right: 2em;
+}
+
+
+/* EDUCACION */
+.container .educacion h2{
+    background-color: var(--secondary-color);
+    color: var(--text-color);
+    padding: .5em;
+}
+
+.container .educacion .content{
+    padding: 1em;
+}
+
+.container .educacion .content div{
+    margin: 1em 0;
+    text-align: justify;
+}
+
+.container .educacion .content div h3{
+    color: var(--primary-color);
+}
+
+
+.container .educacion .content div p{
+    color: var(--text-gray);
+}
+
+
+/* LABORAL */
+.container .laboral h2{
+    background-color: var(--secondary-color);
+    color: var(--text-color);
+    padding: .5em;
+}
+
+.container .laboral .content{
+    padding: 1em;
+}
+
+.container .laboral .content div{
+    margin: 1em 0;
+    text-align: justify;
+}
+
+.container .laboral .content div h3{
+    color: var(--primary-color);
+}
+
+.container .laboral .content div p{
+    color: var(--text-gray);
+}
+
+/* PROGRAMACION */
+.container .programacion h2{
+    background-color: var(--secondary-color);
+    color: var(--text-color);
+    padding: .5em;
+}
+
+.container .programacion .content{
+    padding: 1em;
+    text-align: justify;
+}
+
+.container .programacion .content .referencias{
+    margin: 1em 0;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.container .programacion .content .referencias a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container .programacion .content .referencias a img{
+    width: 3em;
+    height: 3em;
+    margin-right: .5em;
+}
+
+/* EXPECTATIVA */
+
+.container .expectativa h2{
+    background-color: var(--secondary-color);
+    color: var(--text-color);
+    padding: .5em;
+}
+
+.container .expectativa .content{
+    padding: 1em;
+    text-align: justify;
+}
+
+/* VIDEO */
+
+.container .video h2{
+    background-color: var(--secondary-color);
+    color: var(--text-color);
+    padding: .5em;
+}
+
+.container .video .content{
+    padding: 1em;
+    text-align: justify;
+}
+
+/* MOBIL DESIGN */
+@media only screen and (max-width: 600px) {
+    header{
+        max-width: 1000px;
+        margin: .5rem auto;
+        background-color: var(--primary-color);
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+    
+    header .header__img{
+        height: auto;
+        padding: 1em;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    header .header__img img{
+        width: 15em;
+        height: 16em;
+    }
+    
+    header .header__text{
+        color: var(--text-color);
+        text-align: center;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        margin: 1em 0;
+    }
+
+    .container .datos-generales{
+        margin-bottom: 1em;
+    }
+    
+    .container .datos-generales h2{
+        background-color: var(--secondary-color);
+        color: var(--text-color);
+        padding: .5em;
+    }
+    
+    .container .datos-generales .content{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-auto-rows: 5em;
+    }
+    
+    .container .datos-generales .content div{
+        display: flex;
+        align-items: center;
+        padding-left: 3em;
+    }
+    
+    .container .datos-generales .content div img{
+        width: 3em;
+        height: 2em;
+        margin-right: 1em;
+    }
+    
+    /* IDOMAS */
+    .container .idiomas h2{
+    background-color: var(--secondary-color);
+    color: var(--text-color);
+    padding: .5em;
+    }
+
+    .container .idiomas .content{
+    padding: 2em 0;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    }
+
+    .container .idiomas .content div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    }
+
+    .container .idiomas .content img{
+    width: 5em;
+    height: 5em;
+    margin-right: 2em;
+    }
 }
