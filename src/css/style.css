@@ -41,8 +41,8 @@ header .header__img{
 }
 
 header .header__img img{
-    width: 15em;
-    height: 16em;
+    width: 13em;
+    height: 14em;
 }
 
 header .header__text{
@@ -240,8 +240,8 @@ header .header__text{
     }
     
     header .header__img img{
-        width: 15em;
-        height: 16em;
+        width: 13em;
+        height: 14em;
     }
     
     header .header__text{
